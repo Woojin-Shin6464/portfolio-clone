@@ -22,6 +22,17 @@ navbarMenu.addEventListener("click", (event) => {
     return;
   }
   // console.log(event.target.dataset.link);
-  const scrollTO = document.querySelector(link);
-  scrollTO.scrollIntoView({ behavior: "smooth" });
+  scrollIntoView(link);
 });
+
+// Handle click on "Contact Me" button on home
+const homeContactBtn = document.querySelector(".home__contact");
+
+homeContactBtn.addEventListener("click", () => {
+  scrollIntoView("#contact");
+});
+
+function scrollIntoView(selector) {
+  const scrollTO = document.querySelector(selector);
+  scrollTO.scrollIntoView({ behavior: "smooth" });
+}
