@@ -147,7 +147,8 @@ p {
 
 /* Home */
 #home {
-  background: url(imgs/home-background.png) center/cover no-repeat;
+  /* background: url(imgs/home-background.png) center/cover no-repeat; */
+  background-color: var(--color-light-blue);
   padding: 40px;
   text-align: center;
 }
