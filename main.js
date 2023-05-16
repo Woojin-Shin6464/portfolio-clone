@@ -52,7 +52,7 @@ document.addEventListener("scroll", () => {
     arrowUp.classList.remove("visible");
   }
 
-  if (1755 < window.scrollY) {
+  if (2000 < window.scrollY) {
     arrowUp.style.color = "#ffffff";
   } else {
     arrowUp.style.color = "#afd3e2";
@@ -74,6 +74,12 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
+  // Remove selenction from the previous item and select the new one
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
+  const target = e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  target.classList.add("selected");
+
   projectContainer.classList.add("anim-out");
   setTimeout(() => {
     projects.forEach((project) => {

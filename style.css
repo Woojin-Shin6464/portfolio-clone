@@ -119,7 +119,10 @@ p {
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
+  color: var(--color-white);
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: var(--size-border-radius);
 }
 
 .navbar__logo {
@@ -133,8 +136,9 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-blue-green);
+  border-color: var(--color-white);
   border-radius: var(--size-border-radius);
+  background-color: var(--color-blue-green);
 }
 
 .navbar__toggle-btn {
@@ -298,13 +302,13 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.avtive,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-light-blue);
   color: var(--color-white);
 }
 
-.category__btn.avtive .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
