@@ -475,6 +475,7 @@ p {
   }
 
   #navbar.navbar--dark {
+    height: fit-content;
     padding: 16px;
   }
 
@@ -487,6 +488,7 @@ p {
 
   .navbar__menu.open {
     display: block;
+    background-color: var(--color-light-blue);
   }
 
   .section {
