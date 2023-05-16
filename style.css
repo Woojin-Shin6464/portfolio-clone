@@ -174,7 +174,7 @@ p {
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-blue-green);
+  border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
@@ -438,6 +438,7 @@ p {
   bottom: 20px;
   right: 20px;
   font-size: 50px;
+  color: var(--color-blue-green);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--animation-duration) ease-in;

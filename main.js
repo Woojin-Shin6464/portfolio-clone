@@ -59,12 +59,6 @@ document.addEventListener("scroll", () => {
   } else {
     arrowUp.classList.remove("visible");
   }
-
-  if (2000 < window.scrollY) {
-    arrowUp.style.color = "#ffffff";
-  } else {
-    arrowUp.style.color = "#afd3e2";
-  }
 });
 
 // Handle click on the "arrow up" button
